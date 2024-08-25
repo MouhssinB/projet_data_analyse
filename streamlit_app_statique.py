@@ -232,7 +232,7 @@ accident_par_type_trajet.set_index('trajet_lib', inplace=True)
 #La répartition des usagers par sexe
 accident_par_sexe= df_usagers['sexe_lib'].astype('str').value_counts().sort_index().reset_index()
 accident_par_sexe.columns = ['sexe_lib', 'count']
-accident_par_sexe.set_index('sexe_lib', inplace=True)
+#accident_par_sexe.set_index('sexe_lib', inplace=True)
 
 
 #Le nombre d'accidents par condition atmosphérique
@@ -319,7 +319,7 @@ st.header('Nombre d\'accidents par date')
 st.bar_chart(accident_par_date_agg ,    x_label='Date', y_label='Nombre d\'accidents')
 ''
 
-fig = px.pie(accident_par_sexe, values='count', names='sexe', title='La répartition des usagers par sexe.')
+fig = px.pie(accident_par_sexe, values='count', names='sexe_lib', title='La répartition des usagers par sexe.')
 st.plotly_chart(fig, theme=None)
 
 ''
