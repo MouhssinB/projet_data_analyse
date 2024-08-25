@@ -319,7 +319,7 @@ st.header('Nombre d\'accidents par date')
 st.bar_chart(accident_par_date_agg ,    x_label='Date', y_label='Nombre d\'accidents')
 ''
 
-fig = px.pie(accident_par_sexe, values='count',  title='La répartition des usagers par sexe.')
+fig = px.pie(accident_par_sexe, values='count', names='sexe', title='La répartition des usagers par sexe.')
 st.plotly_chart(fig, theme=None)
 
 ''
