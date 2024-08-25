@@ -10,10 +10,10 @@ from streamlit_folium import folium_static
 import pydeck as pdk
 
 
-DATA_FILENAME_vehicules=r'c:\\Users\\mouhs\\Desktop\\projet_data_school\\gdp-dashboard\\data\\vehicules.csv'
-DATA_FILENAME_usagers=r'c:\\Users\\mouhs\\Desktop\\projet_data_school\\gdp-dashboard\\data\\usagers.csv'
-DATA_FILENAME_lieux=r'c:\\Users\\mouhs\\Desktop\\projet_data_school\\gdp-dashboard\\data\\lieux.csv'
-DATA_FILENAME_caracteristiques=r'c:\\Users\\mouhs\\Desktop\\projet_data_school\\gdp-dashboard\\data\\carcteristiques.csv'
+DATA_FILENAME_vehicules=r'data\\vehicules.csv'
+DATA_FILENAME_usagers=r'data\\usagers.csv'
+DATA_FILENAME_lieux=r'data\\lieux.csv'
+DATA_FILENAME_caracteristiques=r'data\\carcteristiques.csv'
 
 df_vehicules = pd.read_csv(DATA_FILENAME_vehicules, sep=';', dtype=str)
 df_usagers = pd.read_csv(DATA_FILENAME_usagers , sep=';' , dtype=str)
