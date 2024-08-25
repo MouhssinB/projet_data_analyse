@@ -1,11 +1,6 @@
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
-import math
 import pandas as pd
-import plotly.express as px
-import pandas as pd
-import folium
 from streamlit_folium import folium_static
 import pydeck as pdk
 
