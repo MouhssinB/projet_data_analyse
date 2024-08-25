@@ -335,6 +335,6 @@ st.bar_chart(accident_par_cond_atm ,    x_label='Conditions atmosphériques', y
 ''
 st.header('Nombre d\'accidents sur obstacles mobiles')
 
-st.bar_chart(nombre_accident_par_obsm ,    x_label='Obsession', y_label='Nombre d\'accidents')
+st.bar_chart(nombre_accident_par_obsm ,    x_label='Obstabcles', y_label='Nombre d\'accidents')
 
 ''
